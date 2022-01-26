@@ -6,15 +6,6 @@
 
 
 
-app.get("/unsplash", (req, res) => {
-  request("https://source.unsplash.com/random/800x400?star")
-    .on("response", response => {
-      response.headers[ 'Cache-Control´ ] = max-age=0, no-cache, no-store, must-revalidate
-    .pipe(res);
-})
-
-
-
 
 
 
